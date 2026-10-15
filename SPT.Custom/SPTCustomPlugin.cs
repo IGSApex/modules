@@ -67,6 +67,7 @@ public class SPTCustomPlugin : BaseUnityPlugin
 
             // 4.1
             new FixKeylessDoorsPatch().Enable();
+            new SearchOpenContainersPatch().Enable();
 
             HookObject.AddComponent<MenuNotificationManager>();
         }
