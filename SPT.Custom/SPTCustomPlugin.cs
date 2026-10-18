@@ -67,10 +67,6 @@ public class SPTCustomPlugin : BaseUnityPlugin
 
             // 4.1
             new FixKeylessDoorsPatch().Enable();
-            new SearchOpenContainersPatch().Enable();
-            NativeTraderScrollingBehaviour.ScrollWheelSpeed = Config.Bind("Native Trader Scrolling", "Scroll Wheel Speed", 30f, "Mouse wheel scrolling speed for trader cards.");
-            new NativeTraderScrollingPatch().Enable();
-            new NativeTraderPlayerCardPatch().Enable();
 
             HookObject.AddComponent<MenuNotificationManager>();
         }
